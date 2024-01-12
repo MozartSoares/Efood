@@ -1,7 +1,7 @@
 import FacebookSVG from '../../assets/SVG/FacebookSVG'
 import InstagramSVG from '../../assets/SVG/InstagramSVG'
 import TwitterSVG from '../../assets/SVG/TwitterSVG'
-import LogoSVG from '../../assets/SVG/logoSVG'
+import LogoSVG from '../../assets/SVG/LogoSVG'
 import { FooterContainer } from './styles'
 
 const Footer = () => (

@@ -1,4 +1,4 @@
-import LogoSVG from '../../assets/SVG/logoSVG'
+import LogoSVG from '../../assets/SVG/LogoSVG'
 import { HeaderContainer, Subtitle } from './styles'
 
 const Header = () => (

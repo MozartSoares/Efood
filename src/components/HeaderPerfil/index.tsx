@@ -1,4 +1,4 @@
-import LogoSVG from '../../assets/SVG/logoSVG'
+import Logo from '../../assets/SVG/LogoSVG'
 import { HeaderContainer, LinkHome } from './styles'
 
 const HeaderPerfil = () => (
@@ -6,7 +6,7 @@ const HeaderPerfil = () => (
     <div>
       <LinkHome to="/">Restaurantes</LinkHome>
       <div>
-        <LogoSVG />
+        <Logo />
       </div>
       <p>0 produto(s) no carrinho</p>
     </div>
