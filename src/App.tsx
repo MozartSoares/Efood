@@ -1,17 +1,16 @@
 import { GlobalStyle } from './GlobalStyles'
+import { BrowserRouter } from 'react-router-dom'
 
-import Header from './components/Header'
-import Product from './components/Product'
+import Rotas from './routes'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyle />
-      <Header />
-      <div className="container">
-        <Product />
-      </div>
-    </>
+      <Rotas />
+      <Footer />
+    </BrowserRouter>
   )
 }
 

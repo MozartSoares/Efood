@@ -1,9 +1,30 @@
 import { styled } from 'styled-components'
 import { cores } from '../../GlobalStyles'
+import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.div`
   max-width: 472px;
   width: 100%;
+  background-color: ${cores.branco};
+`
+
+export const Imagem = styled.div`
+  width: 100%;
+  height: 217px;
+  position: relative;
+`
+
+export const ContainerTags = styled.div`
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  display: flex;
+  margin-right: 8px;
+  justify-content: flex-end;
+
+  ${TagContainer} {
+    margin-right: 8px;
+  }
 `
 
 export const Titulo = styled.h3`
@@ -19,23 +40,30 @@ export const Rating = styled.h5`
   margin-right: 8px;
 `
 
-export const InfosContainer = styled.div`
+export const PerfilContainer = styled.div`
   padding: 8px;
   border: 1px solid ${cores.rosa};
+  border-top: 0;
 `
 
 export const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   div {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+  }
+
+  ${TagContainer} {
+    font-size: 14px;
   }
 `
 
 export const Description = styled.p`
   font-size: 14px;
   color: ${cores.rosa};
+  margin-bottom: 20px;
 `
