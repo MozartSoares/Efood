@@ -1,5 +1,5 @@
 import sushi from '../../assets/images/sushi.png'
-import trattoria from '../../assets/images/Trattoria.png'
+import trattoria from '../../assets/images/trattoria.png'
 
 import Perfil from '../../Models/Perfil'
 import ProfileList from '../../components/ProfileList'
