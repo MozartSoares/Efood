@@ -69,4 +69,5 @@ export const Description = styled.p`
   color: ${cores.rosa};
   margin-bottom: 16px;
   margin-top: 8px;
+  line-height: 22px;
 `
