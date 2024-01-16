@@ -14,6 +14,7 @@ export const FooterContainer = styled.footer`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 8px;
+    margin-top: 3px;
   }
 
   p {
@@ -22,5 +23,6 @@ export const FooterContainer = styled.footer`
     max-width: 480px;
     width: 100%;
     text-align: center;
+    margin-top: 50px;
   }
 `

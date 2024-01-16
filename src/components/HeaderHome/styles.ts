@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   background-color: ${cores.creme};
-  padding-top: 40px;
+  padding-top: 64px;
 
   div {
     max-width: 552px;

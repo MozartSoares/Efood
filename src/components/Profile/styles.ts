@@ -41,7 +41,7 @@ export const Rating = styled.h5`
 `
 
 export const PerfilContainer = styled.div`
-  padding: 8px;
+  padding: 7px;
   border: 1px solid ${cores.rosa};
   border-top: 0;
 `
@@ -50,14 +50,15 @@ export const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 16px;
 
   div {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
   }
 
   ${TagContainer} {
+    padding-bottom: 4px;
     font-size: 14px;
   }
 `
@@ -65,5 +66,6 @@ export const TitleContainer = styled.div`
 export const Description = styled.p`
   font-size: 14px;
   color: ${cores.rosa};
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  margin-top: 8px;
 `

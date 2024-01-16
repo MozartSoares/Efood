@@ -1,14 +1,5 @@
 import StarSVG from '../../assets/SVG/StarSVG'
-import {
-  Card,
-  Rating,
-  TitleContainer,
-  Titulo,
-  Description,
-  PerfilContainer,
-  Imagem,
-  ContainerTags
-} from './styles'
+import * as S from './styles'
 import Tag from '../Tag'
 
 export type Props = {
@@ -20,30 +11,30 @@ export type Props = {
 }
 
 const Profile = ({ titulo, rating, imagem, infos, descricao }: Props) => (
-  <Card>
-    <Imagem style={{ backgroundImage: `url(${imagem})` }}>
-      <ContainerTags>
+  <S.Card>
+    <S.Imagem style={{ backgroundImage: `url(${imagem})` }}>
+      <S.ContainerTags>
         {infos.map((info) => (
           <Tag type="tag" key={info}>
             {info}
           </Tag>
         ))}
-      </ContainerTags>
-    </Imagem>
-    <PerfilContainer>
-      <TitleContainer>
-        <Titulo>{titulo}</Titulo>
+      </S.ContainerTags>
+    </S.Imagem>
+    <S.PerfilContainer>
+      <S.TitleContainer>
+        <S.Titulo>{titulo}</S.Titulo>
         <div>
-          <Rating>{rating}</Rating>
+          <S.Rating>{rating}</S.Rating>
           <StarSVG />
         </div>
-      </TitleContainer>
-      <Description>{descricao}</Description>
+      </S.TitleContainer>
+      <S.Description>{descricao}</S.Description>
       <Tag type="link" to="/Perfil">
         Saiba mais
       </Tag>
-    </PerfilContainer>
-  </Card>
+    </S.PerfilContainer>
+  </S.Card>
 )
 
 export default Profile

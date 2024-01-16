@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
   height: 186px;
   font-size: 18px;
   color: ${cores.rosa};
+  font-weight: bold;
 
   div {
     display: grid;

@@ -3,14 +3,12 @@ import { Banner, BannerContainer } from './styles'
 
 const BannerPerfil = () => (
   <BannerContainer>
-    <div className="container">
-      <Banner style={{ backgroundImage: `url(${trattoria})` }}>
-        <div>
-          <h4>Italiana</h4>
-          <h3>La Dolce Vitta Trattoria</h3>
-        </div>
-      </Banner>
-    </div>
+    <Banner style={{ backgroundImage: `url(${trattoria})` }}>
+      <div className="container">
+        <h4>Italiana</h4>
+        <h3>La Dolce Vitta Trattoria</h3>
+      </div>
+    </Banner>
   </BannerContainer>
 )
 

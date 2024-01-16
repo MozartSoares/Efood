@@ -12,7 +12,7 @@ export const TagContainer = styled.div`
   height: 100%;
   background-color: ${cores.rosa};
   color: ${cores.creme};
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 `
 
@@ -25,7 +25,7 @@ export const TagLink = styled(Link)`
   height: 100%;
   background-color: ${cores.rosa};
   color: ${cores.creme};
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
 `
