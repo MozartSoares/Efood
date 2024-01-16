@@ -23,7 +23,7 @@ export const ContainerTags = styled.div`
   justify-content: flex-end;
 
   ${TagContainer} {
-    margin-right: 8px;
+    margin-right: 16px;
   }
 `
 
@@ -38,6 +38,7 @@ export const Rating = styled.h5`
   font-size: 18px;
   color: ${cores.rosa};
   margin-right: 8px;
+  max-height: 21px;
 `
 
 export const PerfilContainer = styled.div`

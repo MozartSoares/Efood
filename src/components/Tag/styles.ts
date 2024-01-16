@@ -12,7 +12,7 @@ export const TagContainer = styled.div`
   height: 100%;
   background-color: ${cores.rosa};
   color: ${cores.creme};
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 `
 
