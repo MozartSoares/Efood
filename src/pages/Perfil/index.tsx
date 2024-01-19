@@ -1,4 +1,4 @@
-import Cardapio from '../../Cardapio'
+import Cardapio from '../../components/Cardapio'
 import BannerPerfil from '../../components/BannerPerfil'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Prato from '../../Models/Prato'
