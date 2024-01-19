@@ -12,7 +12,12 @@ export const CardPrato = styled.div`
   padding: 8px;
 
   img {
+    object-fit: cover;
     margin-bottom: 4px;
+    max-width: 304px;
+    max-height: 167px;
+    height: 100%;
+    width: 100%;
   }
 
   h5 {
@@ -22,6 +27,7 @@ export const CardPrato = styled.div`
 
   p {
     line-height: 22px;
+    min-height: 88px;
   }
 `
 export const BotaoPrato = styled.button`
@@ -38,4 +44,5 @@ export const BotaoPrato = styled.button`
   font-weight: bold;
   border: none;
   margin-top: 8px;
+  cursor: pointer;
 `

@@ -1,15 +1,22 @@
-import trattoria from '../../assets/images/bannerTrattoria.png'
 import { Banner, BannerContainer } from './styles'
 
-const BannerPerfil = () => (
-  <BannerContainer>
-    <Banner style={{ backgroundImage: `url(${trattoria})` }}>
-      <div className="container">
-        <h4>Italiana</h4>
-        <h3>La Dolce Vitta Trattoria</h3>
-      </div>
-    </Banner>
-  </BannerContainer>
-)
+type Props = {
+  imagem: string
+  titulo: string
+  tipo: string
+}
+
+const BannerPerfil = ({ imagem, titulo, tipo }: Props) => {
+  return (
+    <BannerContainer>
+      <Banner style={{ backgroundImage: `url(${imagem})` }}>
+        <div className="container">
+          <h4>{tipo}</h4>
+          <h3>{titulo}</h3>
+        </div>
+      </Banner>
+    </BannerContainer>
+  )
+}
 
 export default BannerPerfil

@@ -16,7 +16,6 @@ export const ListCardapio = styled.ul`
   gap: 32px;
 `
 export const Modal = styled.div`
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,6 +24,11 @@ export const Modal = styled.div`
   z-index: 1;
   align-items: center;
   justify-content: center;
+  display: none;
+
+  &.visivel {
+    display: flex;
+  }
 
   .overlay {
     z-index: 0;
@@ -67,10 +71,14 @@ export const InfosContainer = styled.div`
 
   p {
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     margin-top: 16px;
     font-size: 14px;
     line-height: 22px;
+    min-height: 176px;
+
+    span {
+    }
   }
 `
 
@@ -82,4 +90,5 @@ export const BotaoFechar = styled.img`
   width: 100%;
   top: 8px;
   right: 8px;
+  cursor: pointer;
 `

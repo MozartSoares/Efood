@@ -45,6 +45,7 @@ export const PerfilContainer = styled.div`
   padding: 7px;
   border: 1px solid ${cores.rosa};
   border-top: 0;
+  min-height: 205px;
 `
 
 export const TitleContainer = styled.div`
@@ -70,4 +71,5 @@ export const Description = styled.p`
   margin-bottom: 16px;
   margin-top: 8px;
   line-height: 22px;
+  min-height: 110px;
 `

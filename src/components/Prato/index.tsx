@@ -1,20 +1,32 @@
 import { BotaoPrato, CardPrato } from './styles'
 
+type MaisDetalhesType = () => void
+
 export type Props = {
-  titulo: string
+  foto: string
+  nome: string
   descricao: string
-  imagem: string
+  maisDetalhes: MaisDetalhesType
 }
 
-const Prato = ({ imagem, descricao, titulo }: Props) => (
-  <CardPrato>
-    <img src={imagem} alt="" />
-    <div>
-      <h5>{titulo}</h5>
-      <p>{descricao}</p>
-      <BotaoPrato>Adicionar ao carrinho</BotaoPrato>
-    </div>
-  </CardPrato>
-)
+const Prato = ({ descricao, foto, nome, maisDetalhes }: Props) => {
+  const getDescription = (description: string) => {
+    if (description.length > 168) {
+      return description.slice(0, 165) + '...'
+    }
+    return description
+  }
+
+  return (
+    <CardPrato>
+      <img src={foto} alt="Foto do prato" />
+      <div>
+        <h5>{nome}</h5>
+        <p>{getDescription(descricao)}</p>
+        <BotaoPrato onClick={maisDetalhes}>Mais detalhes</BotaoPrato>
+      </div>
+    </CardPrato>
+  )
+}
 
 export default Prato

@@ -1,27 +1,32 @@
 import Profile from '../Profile'
 import { Container, List } from './styles'
 
-import Perfil from '../../Models/Perfil'
+import { Restaurante } from '../../pages/Home'
 
 export type Props = {
-  profiles: Perfil[]
+  profiles: Restaurante[]
 }
 
-const ProfileList = ({ profiles }: Props) => (
-  <Container>
-    <List>
-      {profiles.map((perfil) => (
-        <Profile
-          key={perfil.id}
-          titulo={perfil.titulo}
-          rating={perfil.rating}
-          descricao={perfil.descricao}
-          infos={perfil.infos}
-          imagem={perfil.imagem}
-        />
-      ))}
-    </List>
-  </Container>
-)
-
+const ProfileList = ({ profiles }: Props) => {
+  return (
+    <Container>
+      <List>
+        {profiles.map((restaurante) => (
+          <li key={restaurante.id}>
+            <Profile
+              id={restaurante.id}
+              titulo={restaurante.titulo}
+              avaliacao={restaurante.avaliacao}
+              descricao={restaurante.descricao}
+              infos={restaurante.infos}
+              imagem={restaurante.capa}
+              tipo={restaurante.tipo}
+              destacado={restaurante.destacado}
+            />
+          </li>
+        ))}
+      </List>
+    </Container>
+  )
+}
 export default ProfileList
