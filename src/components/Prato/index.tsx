@@ -1,4 +1,5 @@
-import { BotaoPrato, CardPrato } from './styles'
+import { Botao } from '../../GlobalStyles'
+import { CardPrato } from './styles'
 
 type MaisDetalhesType = () => void
 
@@ -23,7 +24,7 @@ const Prato = ({ descricao, foto, nome, maisDetalhes }: Props) => {
       <div>
         <h5>{nome}</h5>
         <p>{getDescription(descricao)}</p>
-        <BotaoPrato onClick={maisDetalhes}>Mais detalhes</BotaoPrato>
+        <Botao onClick={maisDetalhes}>Mais detalhes</Botao>
       </div>
     </CardPrato>
   )

@@ -29,6 +29,7 @@ export const HeaderContainer = styled.header`
 
   p {
     text-align: right;
+    cursor: pointer;
   }
 `
 export const LinkHome = styled(Link)`

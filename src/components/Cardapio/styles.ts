@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../GlobalStyles'
-import { BotaoPrato } from '../Prato/styles'
+import { Botao } from '../../GlobalStyles'
 
 export const ContainerCardapio = styled.div`
   background-color: ${cores.brancoDiferente};
@@ -57,7 +57,7 @@ export const ModalContent = styled.div`
     width: 280px;
   }
 `
-export const BotaoModal = styled(BotaoPrato)`
+export const BotaoModal = styled(Botao)`
   max-width: 218px;
   padding: 4px 7px;
   line-height: normal;

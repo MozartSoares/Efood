@@ -30,19 +30,3 @@ export const CardPrato = styled.div`
     min-height: 88px;
   }
 `
-export const BotaoPrato = styled.button`
-  background-color: ${cores.creme};
-  color: ${cores.rosa};
-  max-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  height: 100%;
-  width: 100%;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  margin-top: 8px;
-  cursor: pointer;
-`
