@@ -1,34 +1,39 @@
-Efood App (Em Construção)
+# Efood App (Em Construção)
+
 Bem-vindo ao Efood App, um projeto fictício inspirado em aplicativos de delivery de comida, como iFood. Este aplicativo está atualmente em construção e faz parte do projeto final necessário para a conclusão de uma etapa do curso.
 
-Funcionalidades
-Listagem de Restaurantes: Explore uma variedade de restaurantes, cada um com seu cardápio exclusivo.
+## Funcionalidades
 
-Detalhes do Prato: Descubra detalhes sobre cada prato oferecido, incluindo descrições, preços e avaliações.
+- **Listagem de Restaurantes:** Explore uma variedade de restaurantes, cada um com seu cardápio exclusivo.
 
-Simulação de Pagamento: Experimente a funcionalidade de simulação de pagamento para tornar a experiência do usuário mais próxima da realidade.
+- **Detalhes do Prato:** Descubra detalhes sobre cada prato oferecido, incluindo descrições, preços e avaliações.
 
-Tecnologias Utilizadas
-React: A biblioteca JavaScript para construção de interfaces de usuário, proporcionando uma experiência de usuário rápida e interativa.
+- **Simulação de Pagamento:** Experimente a funcionalidade de simulação de pagamento para tornar a experiência do usuário mais próxima da realidade.
 
-Redux e Redux Toolkit Query: Gerenciamento de estado eficiente para controlar o fluxo de dados na aplicação e Redux Toolkit Query para integração fácil com APIs.
+## Tecnologias Utilizadas
 
-React Router Dom: Roteamento de página para uma navegação suave e dinâmica entre as seções do aplicativo.
+- **React:** A biblioteca JavaScript para construção de interfaces de usuário, proporcionando uma experiência de usuário rápida e interativa.
 
-API de Pagamento: Integração com uma API de pagamento simulada para proporcionar a experiência de simulação de pagamento.
+- **Redux e Redux Toolkit Query:** Gerenciamento de estado eficiente para controlar o fluxo de dados na aplicação e Redux Toolkit Query para integração fácil com APIs.
 
-Como Executar
-Clone este repositório: git clone https://github.com/seu-usuario/efood-app.git
-Instale as dependências: npm install
-Inicie o aplicativo: npm start
+- **React Router Dom:** Roteamento de página para uma navegação suave e dinâmica entre as seções do aplicativo.
+
+- **API de Pagamento:** Integração com uma API de pagamento simulada para proporcionar a experiência de simulação de pagamento.
+
+## Como Executar
+
+1. Clone este repositório: `git clone https://github.com/seu-usuario/efood-app.git`
+2. Instale as dependências: `npm install`
+3. Inicie o aplicativo: `npm start`
+
 Sinta-se à vontade para explorar e experimentar o Efood App!
 
-Contribuições
+## Contribuições
+
 Contribuições são bem-vindas! Se você tem sugestões de melhorias ou encontrou algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Nota: Este projeto está em construção e faz parte do projeto final avaliado pela equipe de tutores da EBAC como requisito para a aprovação em uma das etapas do curso.
+**Nota:** Este projeto está em construção e faz parte do projeto final avaliado pela equipe de tutores da EBAC como requisito para a aprovação em uma das etapas do curso.
 
-Apreciamos o seu interesse no Efood App!
 
 
 
