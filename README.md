@@ -1,8 +1,8 @@
-# Efood  (Em Construção)
+# 🍔 Efood  (Em Construção) 🛠️
 
-Bem-vindo ao Efood , um projeto fictício inspirado em aplicativos de delivery de comida, como iFood. Este aplicativo está atualmente em construção e faz parte do projeto final necessário para a conclusão de uma etapa do curso.
+Bem-vindo ao Efood, um projeto fictício inspirado em aplicativos de delivery de comida, como iFood. Este aplicativo está atualmente em construção e faz parte do projeto final necessário para a conclusão de uma etapa do curso.
 
-## Funcionalidades
+## 🍽️ Funcionalidades
 
 - **Listagem de Restaurantes:** Explore uma variedade de restaurantes, cada um com seu cardápio exclusivo.
 
@@ -10,7 +10,7 @@ Bem-vindo ao Efood , um projeto fictício inspirado em aplicativos de delivery d
 
 - **Simulação de Pagamento:** Experimente a funcionalidade de simulação de pagamento para tornar a experiência do usuário mais próxima da realidade.
 
-## Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas
 
 - **React:** A biblioteca JavaScript para construção de interfaces de usuário, proporcionando uma experiência de usuário rápida e interativa.
 
@@ -20,7 +20,7 @@ Bem-vindo ao Efood , um projeto fictício inspirado em aplicativos de delivery d
 
 - **API de Pagamento:** Integração com uma API de pagamento simulada para proporcionar a experiência de simulação de pagamento.
 
-## Como Executar
+## ▶️ Como Executar
 
 1. Clone este repositório: `git clone https://github.com/seu-usuario/efood-app.git`
 2. Instale as dependências: `npm install`
@@ -28,12 +28,11 @@ Bem-vindo ao Efood , um projeto fictício inspirado em aplicativos de delivery d
 
 Sinta-se à vontade para explorar e experimentar o Efood App!
 
-## Contribuições
+**Nota:** Este projeto está em construção e faz parte do projeto final avaliado pela equipe de tutores da EBAC como requisito obrigatório para a aprovação em uma das etapas do curso. Nessa etapa, recebemos apenas o link do Figma do design e precisamos desenvolver totalmente por conta própria.
+
+## 🤝 Contribuições
 
 Contribuições são bem-vindas! Se você tem sugestões de melhorias ou encontrou algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-**Nota:** Este projeto está em construção e faz parte do projeto final avaliado pela equipe de tutores da EBAC como requisito obrigatório para a aprovação em uma das etapas do curso, nessa etapa recebemos apenas o link do Figma do design e precisamos desenvolver totalmente por conta própria.
-
 
 
 
