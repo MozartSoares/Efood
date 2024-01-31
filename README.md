@@ -1,6 +1,6 @@
 # 🍔 Efood  (Em Construção) 🛠️
 
-Bem-vindo ao Efood, um projeto fictício inspirado em aplicativos de delivery de comida, como iFood. Este aplicativo está atualmente em construção e faz parte do projeto final necessário para a conclusão de uma etapa do curso.
+Bem-vindo ao Efood, um projeto fictício inspirado em aplicativos de delivery de comida, como iFood. Este aplicativo está atualmente em construção e faz parte do projeto final obrigatório que deve ser desenvolvido para a conclusão de uma etapa de um curso.
 
 ## 🍽️ Funcionalidades
 
