@@ -1,6 +1,6 @@
-# Efood App (Em Construção)
+# Efood  (Em Construção)
 
-Bem-vindo ao Efood App, um projeto fictício inspirado em aplicativos de delivery de comida, como iFood. Este aplicativo está atualmente em construção e faz parte do projeto final necessário para a conclusão de uma etapa do curso.
+Bem-vindo ao Efood , um projeto fictício inspirado em aplicativos de delivery de comida, como iFood. Este aplicativo está atualmente em construção e faz parte do projeto final necessário para a conclusão de uma etapa do curso.
 
 ## Funcionalidades
 
@@ -32,7 +32,7 @@ Sinta-se à vontade para explorar e experimentar o Efood App!
 
 Contribuições são bem-vindas! Se você tem sugestões de melhorias ou encontrou algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-**Nota:** Este projeto está em construção e faz parte do projeto final avaliado pela equipe de tutores da EBAC como requisito para a aprovação em uma das etapas do curso.
+**Nota:** Este projeto está em construção e faz parte do projeto final avaliado pela equipe de tutores da EBAC como requisito obrigatório para a aprovação em uma das etapas do curso, nessa etapa recebemos apenas o link do Figma do design e precisamos desenvolver totalmente por conta própria.
 
 
 
