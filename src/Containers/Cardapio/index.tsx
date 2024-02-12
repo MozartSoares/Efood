@@ -1,24 +1,14 @@
 import { useState } from 'react'
 import { add, open } from '../../store/reducers/cart'
-import PratoCard from '../Prato'
+import PratoCard from '../../components/Prato'
 import * as S from './styles'
 import close from '../../assets/images/closeX.png'
-import { Restaurante } from '../../pages/Home'
+
 import { useDispatch } from 'react-redux'
-
-import Prato from '../Prato'
-
-export type Prato = Restaurante['cardapio'][0]
+import { parseToBrl } from '../../utils'
 
 export type Props = {
   cardapio: Prato[]
-}
-
-export const formataPreco = (preco = 0) => {
-  return new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-  }).format(preco)
 }
 
 const Cardapio = ({ cardapio }: Props) => {
@@ -39,15 +29,15 @@ const Cardapio = ({ cardapio }: Props) => {
   const addItem = () => {
     dispatch(add(selected))
     dispatch(open())
+    toggleModalVisibility()
   }
 
   return (
     <S.ContainerCardapio>
       <S.ListCardapio>
         {cardapio.map((item) => (
-          <li>
+          <li key={item.id}>
             <PratoCard
-              key={item.id}
               nome={item.nome}
               descricao={item.descricao}
               foto={item.foto}
@@ -75,7 +65,7 @@ const Cardapio = ({ cardapio }: Props) => {
                   Serve de {selected.porcao}
                 </p>
                 <S.BotaoModal onClick={addItem}>
-                  Adicionar ao carrinho - {formataPreco(selected.preco)}
+                  Adicionar ao carrinho - {parseToBrl(selected.preco)}
                 </S.BotaoModal>
               </S.InfosContainer>
             </>

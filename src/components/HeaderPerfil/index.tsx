@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { open } from '../../store/reducers/cart'
 import Logo from '../../assets/SVG/LogoSVG'
 import { HeaderContainer, LinkHome } from './styles'
-import { RootReducer } from '../../store'
 
 const HeaderPerfil = () => {
   const { items } = useSelector((state: RootReducer) => state.cart)

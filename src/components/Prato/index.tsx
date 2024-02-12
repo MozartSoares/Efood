@@ -1,4 +1,4 @@
-import { Botao } from '../../GlobalStyles'
+import { Button } from '../../GlobalStyles'
 import { CardPrato } from './styles'
 
 type MaisDetalhesType = () => void
@@ -24,7 +24,7 @@ const Prato = ({ descricao, foto, nome, maisDetalhes }: Props) => {
       <div>
         <h5>{nome}</h5>
         <p>{getDescription(descricao)}</p>
-        <Botao onClick={maisDetalhes}>Mais detalhes</Botao>
+        <Button onClick={maisDetalhes}>Mais detalhes</Button>
       </div>
     </CardPrato>
   )

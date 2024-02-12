@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { cores } from '../../GlobalStyles'
+import { breakpoints, cores } from '../../GlobalStyles'
 
 export const Banner = styled.div`
   position: relative;
@@ -44,6 +44,10 @@ export const Banner = styled.div`
     font-weight: bold;
     z-index: 1;
     font-size: 32px;
+  }
+
+  @media (${breakpoints.desktop}) {
+    padding: 0 20px;
   }
 `
 export const BannerContainer = styled.div`

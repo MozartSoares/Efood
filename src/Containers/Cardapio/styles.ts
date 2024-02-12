@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { cores } from '../../GlobalStyles'
-import { Botao } from '../../GlobalStyles'
+import { breakpoints, cores } from '../../GlobalStyles'
+import { Button } from '../../GlobalStyles'
 
 export const ContainerCardapio = styled.div`
   background-color: ${cores.brancoDiferente};
@@ -14,6 +14,18 @@ export const ListCardapio = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
+
+  @media (${breakpoints.desktop}) {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 10px;
+  }
+
+  @media (${breakpoints.tablet}) {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 10px;
+  }
 `
 export const Modal = styled.div`
   position: fixed;
@@ -55,9 +67,23 @@ export const ModalContent = styled.div`
   img {
     height: 280px;
     width: 280px;
+    @media (max-width: 660px) {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (${breakpoints.desktop}) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: 660px) {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
   }
 `
-export const BotaoModal = styled(Botao)`
+export const BotaoModal = styled(Button)`
   max-width: 218px;
   padding: 4px 7px;
   line-height: normal;
@@ -77,7 +103,13 @@ export const InfosContainer = styled.div`
     line-height: 22px;
     min-height: 176px;
 
-    span {
+    @media (${breakpoints.tablet}) {
+      overflow-y: scroll;
+    }
+
+    @media (max-width: 660px) {
+      overflow-y: auto;
+      min-height: auto;
     }
   }
 `

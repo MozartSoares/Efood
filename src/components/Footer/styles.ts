@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../GlobalStyles'
+import { breakpoints, cores } from '../../GlobalStyles'
 
 export const FooterContainer = styled.footer`
   background-color: ${cores.creme};

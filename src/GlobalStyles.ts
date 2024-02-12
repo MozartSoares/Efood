@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled, { createGlobalStyle } from 'styled-components'
 
 export const cores = {
@@ -6,6 +7,11 @@ export const cores = {
   creme: '#FFEBD9',
   amarelo: '#FFb930',
   brancoDiferente: '#FFF8F2'
+}
+
+export const breakpoints = {
+  desktop: 'max-width: 1024px',
+  tablet: 'max-width: 768px'
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -27,11 +33,8 @@ export const GlobalStyle = createGlobalStyle`
   width: 100%;
   margin: 0 auto;
   }
-
-
-
 `
-export const Botao = styled.button`
+export const Button = styled.button`
   background-color: ${cores.creme};
   color: ${cores.rosa};
   max-height: 24px;
@@ -46,4 +49,24 @@ export const Botao = styled.button`
   border: none;
   margin-top: 8px;
   cursor: pointer;
+`
+export const ButtonLink = styled(Link)`
+  background-color: ${cores.creme};
+  color: ${cores.rosa};
+  max-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+
+  .disabled {
+    pointer-events: none;
+  }
 `

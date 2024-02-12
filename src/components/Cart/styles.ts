@@ -2,38 +2,6 @@ import { styled } from 'styled-components'
 import { cores } from '../../GlobalStyles'
 import lixeira from '../../assets/images/Lixeira.png'
 
-export const CartContainer = styled.div`
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: none;
-  justify-content: flex-end;
-
-  &.is-open {
-    display: flex;
-  }
-`
-
-export const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-`
-
-export const Sidebar = styled.aside`
-  z-index: 1;
-  background-color: ${cores.rosa};
-  max-width: 360px;
-  width: 100%;
-  padding: 32px 8px;
-`
-
 export const CartItem = styled.li`
   position: relative;
   display: flex;

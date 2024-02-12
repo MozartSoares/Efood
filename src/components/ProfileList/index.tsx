@@ -1,8 +1,6 @@
 import Profile from '../Profile'
 import { Container, List } from './styles'
 
-import { Restaurante } from '../../pages/Home'
-
 export type Props = {
   profiles: Restaurante[]
 }

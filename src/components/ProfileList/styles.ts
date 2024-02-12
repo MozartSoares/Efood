@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../GlobalStyles'
 
 export const Container = styled.div`
   max-width: 1024px;
@@ -13,4 +14,10 @@ export const List = styled.ul`
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
   row-gap: 48px;
+
+  @media (${breakpoints.desktop}) {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 10px;
+  }
 `

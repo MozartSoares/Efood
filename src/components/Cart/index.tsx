@@ -1,57 +1,52 @@
-import { close, remove } from '../../store/reducers/cart'
-
-import { Botao } from '../../GlobalStyles'
-import * as S from './styles'
-import { RootReducer } from '../../store'
 import { useDispatch, useSelector } from 'react-redux'
-import { formataPreco } from '../Cardapio'
+
+import { getTotalPrice, parseToBrl } from '../../utils'
+
+import { remove } from '../../store/reducers/cart'
+
+import * as S from './styles'
 
 const Cart = () => {
-  const { isOpen, items } = useSelector((state: RootReducer) => state.cart)
-
+  const { items } = useSelector((state: RootReducer) => state.cart)
   const dispatch = useDispatch()
-
-  const closeCart = () => {
-    dispatch(close())
-  }
 
   const removeItem = (id: number) => {
     dispatch(remove(id))
   }
 
-  const getTotalPrice = () => {
-    return items.reduce((acumulador, valorAtual) => {
-      return (acumulador += valorAtual.preco)
-    }, 0)
-  }
-
   return (
-    <S.CartContainer className={isOpen ? 'is-open' : ''}>
-      <S.Overlay onClick={closeCart} />
-      <S.Sidebar>
-        <ul>
-          {items.map((item) => (
-            <S.CartItem key={item.id}>
-              <img src={item.foto} alt={item.nome} />
-              <div>
-                <h3>{item.nome}</h3>
-                <p>{formataPreco(item.preco)}</p>
-              </div>
-              <button
-                onClick={() => removeItem(item.id)}
-                title="remover item"
-                type="button"
-              />
-            </S.CartItem>
-          ))}
-        </ul>
-        <S.PriceContainer>
-          <p>Valor Total</p>
-          <span>{formataPreco(getTotalPrice())}</span>
-        </S.PriceContainer>
-        <Botao>Continuar com a entrega</Botao>
-      </S.Sidebar>
-    </S.CartContainer>
+    <>
+      {items.length > 0 ? (
+        <>
+          <ul>
+            {items.map((item: Prato) => (
+              <S.CartItem key={item.id}>
+                <img src={item.foto} alt={item.nome} />
+                <div>
+                  <h3>{item.nome}</h3>
+                  <p>{parseToBrl(item.preco)}</p>
+                </div>
+                <button
+                  onClick={() => removeItem(item.id)}
+                  title="remover item"
+                  type="button"
+                />
+              </S.CartItem>
+            ))}
+          </ul>
+          <S.PriceContainer>
+            <p>Valor Total</p>
+            <span>{parseToBrl(getTotalPrice(items))}</span>
+          </S.PriceContainer>
+        </>
+      ) : (
+        <h4>
+          O carrinho está vazio, adicione pelo menos um item para continuar com
+          a compra
+        </h4>
+      )}
+    </>
   )
 }
+
 export default Cart

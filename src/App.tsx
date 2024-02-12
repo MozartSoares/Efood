@@ -5,7 +5,7 @@ import Rotas from './routes'
 import Footer from './components/Footer'
 import { Provider } from 'react-redux'
 import { store } from './store'
-import Cart from './components/Cart'
+import Checkout from './Containers/Checkout'
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       <BrowserRouter>
         <GlobalStyle />
         <Rotas />
+        <Checkout />
         <Footer />
-        <Cart />
       </BrowserRouter>
     </Provider>
   )

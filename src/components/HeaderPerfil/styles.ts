@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../GlobalStyles'
+import { breakpoints, cores } from '../../GlobalStyles'
 import { Link } from 'react-router-dom'
 
 export const HeaderContainer = styled.header`
@@ -21,6 +21,13 @@ export const HeaderContainer = styled.header`
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
 
+    @media (max-width: 450px) {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+      width: auto;
+      text-align: center;
+    }
+
     div {
       display: flex;
       flex-direction: column;
@@ -30,6 +37,10 @@ export const HeaderContainer = styled.header`
   p {
     text-align: right;
     cursor: pointer;
+  }
+
+  @media (${breakpoints.desktop}) {
+    padding: 0 20px;
   }
 `
 export const LinkHome = styled(Link)`
