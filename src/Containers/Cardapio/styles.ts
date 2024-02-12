@@ -80,7 +80,8 @@ export const ModalContent = styled.div`
   @media (max-width: 660px) {
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
+    max-height: 65%;
   }
 `
 export const BotaoModal = styled(Button)`
@@ -104,7 +105,7 @@ export const InfosContainer = styled.div`
     min-height: 176px;
 
     @media (${breakpoints.tablet}) {
-      overflow-y: scroll;
+      overflow-y: auto;
     }
 
     @media (max-width: 660px) {
