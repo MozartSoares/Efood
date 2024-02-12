@@ -28,12 +28,9 @@ Bem-vindo ao Efood, um projeto fictício inspirado em aplicativos de delivery de
 
 Sinta-se à vontade para explorar e experimentar o Efood App!
 
-**Nota:** Este projeto está em construção e faz parte do projeto final avaliado pela equipe de tutores da EBAC como requisito obrigatório para a aprovação em uma das etapas do curso. Nessa etapa, recebemos apenas o link do Figma do design e precisamos desenvolver totalmente por conta própria.
-
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Se você tem sugestões de melhorias ou encontrou algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
 
 
 # React + TypeScript + Vite
