@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { cores } from '../../GlobalStyles'
+import { breakpoints, cores } from '../../GlobalStyles'
 
 export const CheckoutContainer = styled.div`
   z-index: 1;
@@ -61,6 +61,12 @@ export const Form = styled.form`
 
     input {
       max-width: 155px;
+      @media (${breakpoints.tablet}) {
+        max-width: 100%;
+      }
+    }
+    @media (${breakpoints.tablet}) {
+      display: block;
     }
   }
 
@@ -71,10 +77,13 @@ export const Form = styled.form`
 
     .cvv {
       max-width: 87px;
+      @media (${breakpoints.tablet}) {
+        max-width: 100%;
+      }
     }
 
-    @media() {
-      padding: 0;
+    @media (${breakpoints.tablet}) {
+      display: block;
     }
   }
 
